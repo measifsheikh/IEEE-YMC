@@ -1,0 +1,800 @@
+@font-face {
+    font-family: "le jour script";
+    src: url(Le\ Jour\ Script.ttf);
+}
+
+
+@media (max-width: 993px) {
+    #logo2 {
+        display: none;
+
+    }
+
+    .logo11 {
+        width: 30vw;
+    }
+
+}
+
+
+
+
+/******************************************** dark mode *****************************************/
+
+.dark{
+    filter: invert();
+}
+.dark-about , .dark-event ,.dark-Membership ,.dark-project, .dark-glimpse-tag-1 , .dark-glimpse-tag {
+    background-image: linear-gradient(180deg, rgb(7, 78, 52), rgb(37, 22, 54));
+    background-size: contain; 
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: beige;
+    }
+ .dark-text{
+    padding: 1%;
+    font-weight: 500;
+    font-size: 3vw;
+    font-family: 'Splash', cursive;
+    pointer-events: inherit;
+ }
+/******************************************* dark mode ***************************************/
+
+@media (max-width: 699px) {
+    .pp {
+        /* background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYRtB3Vkl1ScWc0Bh4k_hYWHFCIYvxlB5lpCyeFK_e87g2aIB4DLMNGWyJ2yYzpf7YN72ZnXnTwczhs2Pyo2EL54wbTB=s1600); */
+      background-image: url(lanndng112.webp);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 125%;
+        
+    }
+
+    .hs {
+        margin-top: 25vh;
+    }
+
+    .opening-text {
+        font-size: 15vw;
+        padding-top: 20vh
+    }
+}
+
+
+@media (min-width: 699px) {
+    #logo1 {
+        display: none;
+
+    }
+
+    .pp {
+        /* background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYQKemeasDcvh-5Qx6QnSLthAX4QxLIJcu8jvsJ3Lk9Md8lf-nL2EOrBC_Kyqnl8vRva0Qvv1-9JrcBJ3BLYOdR6qbweCQ=s1600); */
+        background-image: url(lanndng11.webp);
+        background-position: top;
+        background-repeat: no-repeat;
+ 
+ 
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 100vh;
+    }
+}
+
+
+
+/********************************************************************************/
+
+@keyframes rot-icon {
+    to {
+        transform: rotate(1turn);
+    }
+
+}
+
+@keyframes textane {
+    0% {
+        background-position: 91% 0%
+    }
+
+    50% {
+        background-position: 10% 100%
+    }
+
+    100% {
+        background-position: 91% 0%
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(243, 108, 183);
+    }
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+
+
+/********************************************************************************/
+
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: none;
+}
+
+
+.body {
+    margin: 0;
+    overflow: hidden;
+    padding: 2%;
+    
+    
+    
+    
+}
+
+#logo1,
+#logo2 {
+
+    font-family: 'DM Serif Display', serif;
+    font-weight: 900;
+
+}
+
+
+
+#nav11 {
+    overflow: hidden;
+}
+
+
+.hs {
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+
+
+.nav-link {
+    border-radius: 50px;
+    height: fit-content;
+
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYQKemeasDcvh-5Qx6QnSLthAX4QxLIJcu8jvsJ3Lk9Md8lf-nL2EOrBC_Kyqnl8vRva0Qvv1-9JrcBJ3BLYOdR6qbweCQ=s1600);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.navlist {
+    margin-left: 15%;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.navlistlist {
+    padding: 5% 5%;
+}
+
+.opening-text {
+    padding: 10% 0;
+    padding-bottom:  1%;
+    text-shadow: 5px 7px 1px rgba(32, 40, 40, 0.665), 5px 7px 1px rgb(0, 0, 0);
+    text-align: left;
+    font-size: 15vw;
+    background-color: rgba(255, 255, 255, 0);
+    /* background: linear-gradient(26deg, white, lightblue, pink, rgb(1, 1, 1)); */
+    /* background-size: 70% 70%; */ 
+    background-position: center;
+    /* background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    text-overflow: hidden;
+    overflow: hidden;
+    border-right: .1em solid rgba(255, 166, 0, 0);
+    white-space: nowrap;
+    margin: 0 auto;
+    filter: initial;
+    filter: drop-shadow(0px 0px 3px rgb(255, 255, 255));
+
+    font-family: "Protest Guerrilla";
+    font-weight: 900;
+    font-style: normal;
+    animation:
+        typing 4s steps(40, end),
+        blink-caret .80s step-end 5,
+        textane 15s ease infinite;
+}
+
+
+.opening-box {
+    margin-top: 5vh;
+    width: 70%;
+
+}
+
+
+@media (min-width:1028px) {
+    .opening-logo-1 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .form-width {
+        width: 70%;
+    }
+
+}
+
+
+.opening-logo-img {
+    border-radius: 200%;
+    width: 21rem;
+    filter: drop-shadow(0px 0px 15px rgb(83, 122, 117));
+    position: absolute;
+    right: 2.3vw;
+    top: 30vh;
+}
+
+.rot-img-text {
+    display: inline-block;
+    width: 21.2rem;
+    position: absolute;
+    right: 2.29vw;
+    top: 30vh;
+    animation-name: rot-icon;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 200%;
+
+}
+
+
+
+@media (max-width:700px) {
+    .opening-logo {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+.opening-logo-img-1 {
+    position: absolute;
+    border-radius: 200%;
+    width: 5rem;
+    filter: drop-shadow(0px 0px 15px rgb(83, 122, 117));
+}
+
+.rot-img-text-1 {
+    display: inline-block;
+    width: 5.1rem;
+
+    animation-name: rot-icon;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+
+.message,
+.form-width,
+.submit-s,
+.award-link {
+    display: inline;
+}
+
+.form-width {
+    background-color: #eea89e8b;
+    width: 50%;
+}
+
+.submit-s {
+    padding: 5%;
+}
+
+/********************************************************************************/
+
+
+
+#about , #Membership, #nav11, #Event , #project  ,#Glimpse{
+    user-select: none;
+    caret-color: auto;
+
+}
+
+
+
+
+#about {
+    font-family: 'Zen Maru Gothic', serif;
+    font-weight: bolder;
+    padding: 5% 5%;
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    opacity: 1;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    z-index: -1;
+}
+
+.star-a,
+.star-b,
+.star-c {
+
+    padding: 1%;
+    border-radius: 5px;
+    margin: 0.5%;
+    margin-top: 5%;
+
+}
+
+.star-a {
+    background-color: #085d44;
+}
+
+.star-b {
+    background-color: #08225d;
+}
+
+.star-c {
+    background-color: #45085d;
+}
+
+.star-a,
+.star-b,
+.star-c {
+    display: block;
+    width: 75%;
+    padding: 5%;
+    margin-left: 11%;
+    color: #f2e2e8;
+    box-sizing: border-box;
+    z-index: 5;
+    border: #000000;
+    border-width: 4px;
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.361), 0px 5px 5px 6px rgba(25, 13, 93, 0.127);
+}
+
+
+
+.star-a .star-1 {
+    float: left;
+    background-color: #0b7556c9;
+    width: 4rem;
+
+}
+
+.star-b .star-1 {
+    float: left;
+    background-color: #0b2d7bbd;
+    width: 4rem;
+}
+
+.star-c .star-1 {
+    float: left;
+    background-color: #620d83c6;
+    width: 4rem;
+}
+
+
+
+.about-number {
+
+    padding: 2% 5%;
+
+}
+
+.bolt {
+    font-weight: 900;
+    color: wheat;
+    font-size: 3rem;
+}
+
+
+
+.about-head-1 {
+    padding-top: 2%;
+}
+
+.about-head-2 {
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.border-head {
+    border-width: 10% 0;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+
+}
+
+.about-content {
+    width: 50%;
+    font-family: 'Zen Maru Gothic', serif;
+}
+
+#project {
+    font-family: 'Zen Maru Gothic', serif;
+
+    padding: 6% 3%;
+
+    width: 100vw;
+
+    opacity: 1;
+    background-color: #f2e2e8;
+    overflow-y: hidden;
+    margin: 0;
+    text-align: center;
+    color: black;
+}
+
+.project-scroll {
+    position: relative;
+    display: inline-flex;
+    width: 300%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card-text {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: small;
+    padding: 2%;
+
+
+}
+
+.card-img-top {
+    padding: 1%;
+
+    border-radius: 100%;
+
+}
+
+.textaa {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+#Event {
+    font-family: 'Zen Maru Gothic', serif;
+
+    padding: 6% 3%;
+
+    width: 100vw;
+
+    opacity: 1;
+    background-color: #f2e2e8;
+    overflow-y: hidden;
+    margin: 0;
+    text-align: center;
+    
+}
+
+#project::-webkit-scrollbar {
+    display: none;
+}
+
+#Event::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#Membership {
+    padding: 5% 3%;
+    font-family: 'Zen Maru Gothic', serif;
+    font-weight: bolder;
+    overflow-y: hidden;
+    width: 100vw;
+    background-color: #f2e2e8;
+    opacity: 1;
+
+
+
+    margin: 0;
+    text-align: center;
+    
+
+}
+
+.mebe {
+
+    text-align: left;
+    line-height: 1.5rem;
+
+    overflow-y: hidden;
+
+
+}
+
+.membership-punch {
+    padding-top: 3%;
+   
+    font-weight: 900;
+}
+
+.m-punch-box {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+
+
+
+
+
+#Glimpse {
+
+    font-family: 'Zen Maru Gothic', serif;
+
+    width: 100vw;
+    background-color: #f2e2e8;
+    opacity: 1;
+    background-image: url(121.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position: 60%;
+    background-attachment: fixed;
+    background-size: 125%;
+    overflow-y: hidden;
+    margin: 0;
+    text-align: center;
+
+}
+
+.about-head-3 ,.about-head-3-1 {
+    font-family: 'Zen Maru Gothic', serif;
+
+    margin: 0;
+    padding: 5% 0%;
+    width: 100%;
+
+    font-weight: bold;
+
+}
+.about-head-3-1 {
+background-color: #000000f1;color: #ffffff;
+}
+
+.slide-doc {
+    background-color: rgba(66, 63, 63, 0.55);
+    color: rgb(252, 252, 252);
+    padding: 15%;
+}
+
+.slide-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: light;
+}
+
+#autoslider {
+    position: sticky;
+    top: 0;
+}
+
+.slide-award {
+    background-color: #131111e2;
+
+}
+
+.bhara {
+    background-image: url(Bhargavi\ Sharma.webp);
+}
+
+.nara {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYTn9br01yqx3nHytoVZ7J23Z0pzooPPBehf3UmASQa8-mkK4_6SVIPFAOqMVs2HCBaYmuGevdVCmcBjjh3i3FxrCDQC1g=s1600);
+}
+
+.aryan {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYQoIYGKS9lWYlWaieBQr_d2euAz6pxxra6pgD0xNNvDvBl46ZitYKZrrvyEpLbJtw0dVhDkVmT6PqO6w-vGSGT1gQLn=s1600);
+}
+
+.aryan,
+.nara,
+.bhara {
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1%;
+    text-align: left;
+}
+
+
+
+
+
+
+.testimonial {
+
+    height: 6rem;
+    overflow: scroll;
+    color: #000000;
+    text-overflow: clip;
+    font-size: small;
+    font-weight: bolder;
+    background-color: #c06aa2a7;
+    border-radius: 20px;
+    padding: 1%;
+    backdrop-filter: 1;
+}
+
+.testimonial::-webkit-scrollbar {
+    display: none;
+}
+
+.bg-pic {
+    float: left;
+    width: 10%;
+    margin: 1%;
+    border-width: 0.3rem;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 100px;
+}
+
+
+
+.award-link {
+    padding: 2%;
+    float: right;
+
+}
+
+#foot {
+    padding-top: 3%;
+    background-color: rgb(0, 0, 0);
+    color: #ffffffcc;
+    padding-bottom: 2%;
+    background-position: center;
+
+}
+
+.foot-punch {
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-transform: capitalize;
+    font-size: 125%;
+    font: bolder;
+}
+
+.contact-info {
+    font-size: medium;
+    text-align: center;
+}
+
+.contact-t {
+    padding-top: 2%;
+}
+
+.bbtn {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.ymca-logo {
+
+    width: 30%;
+}
+
+
+
+
+
+
+/**  event and card img**/
+
+.technoxian {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYQgTd7SVthCaBINo0RouLuT4Rc6lh75WN_mYmvsoMfnwjwpgYO7wnyQ_54Nm9Le-lGIGMKPBdMqY-UIw_lpKW8zobsR9Q=s1600);
+}
+
+.PokemonXHunter {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYTmJXK60IpSY7YzHvS7j6PDhJuFTNsBv4gsS-MUiGrVSpXd2tQpJe5pb8HIB0BFODcPlqwwl3iudSyYrNN7dhk4CeOd=s1600);
+}
+
+.Digitalization {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYTiC0KxJW_DW4NiQ0WLYhEo89-Ml4sge4K6pSgQczQuDn30GBSsGdk7dzlfIQ3mfFGv_0tt1zFR0-n3Lmbsgr8_DolM=s1600);
+}
+
+.IEEE-Xplore {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYTEYUoaoANTOaZE0aL30RqLlUHSYCwjgXiExtc7kVVZju-_G4L1wnzxffE5jiYzzwXuNfhjkIzn5KutTLHU04_t4m-imw=s1600);
+}
+
+.Pokemon-pikachu {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYRf4nv8fgRK8DcXtlKT2NT-w1-TMcxR9-WJGNMnlQ2kRpAe55c1Uj82T1J7nayafny4TsPkJW2298vr7kWdyQjn-_O2GQ=s1600);
+}
+
+.Roboracer {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYRy-OdmUYVp26w-_ers5XBDHcGO5BWSu6QSXpEHvbaEpSd587zrkYc3QArC2afP3-vRhO3boKN18cMFhaPLFAbeYb-FfQ=s1600);
+}
+
+.whack-a-mole {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYQ_0LvvnZEvs6U5q4YaUq6AFV0o4vVCJLaHUgtGJ2nZRrgdY0tvPXvWTRjjynrVXtxBAySRY_bzbSOm4gqVyfTvephp=s1600);
+}
+
+.Traffic-Light {
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AEYmBYR4HS_mMdvQgQmGgw1FtOQ6Fcz4YN6L07LAoWbuSv8rhOFs8qxDslZyMjcda9lgVPF80Cd48qMIqIqcXrChmvt9YmJq=s1600);
+}
+
+.Traffic-Light,
+.whack-a-mole,
+.Roboracer,
+.Pokemon-pikachu,
+.IEEE-Xplore,
+.Digitalization,
+.PokemonXHunter,
+.technoxian {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.Pokemon-pikachu:hover .card,
+.Roboracer:hover .card,
+.whack-a-mole:hover .card,
+.Traffic-Light:hover .card,
+.technoxian:hover .card,
+.PokemonXHunter:hover .card,
+.Digitalization:hover .card,
+.IEEE-Xplore:hover .card {
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    background-color: rgba(0, 0, 0, 0.332);
+    visibility: visible;
+}
+
+.card {
+    box-shadow: 0 0 5px 7px rgba(0, 0, 0, 0.342);
+}

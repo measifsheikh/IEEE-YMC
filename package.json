@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.3",
+    "express.js": "^1.0.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "ieee-ymca-sb",
+  "version": "1.0.0",
+  "description": "webpage of ieee ymca sb",
+  "main": "server.js",
+  "keywords": [
+    "Ieee",
+    "ymca",
+    "sb"
+  ],
+  "author": "asif",
+  "license": "ISC"
+}
