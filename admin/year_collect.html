@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IEEE Members Audit</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #779ae0a7; /* IEEE Yellow */
+    }
+    .container {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .card {
+
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #0056b3; /* IEEE Blue */
+    }
+    .select-form {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .select-year,
+    .select-event {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 16px;
+    }
+    .select-year {
+        max-width: 100%;
+    }
+    .btn {
+        margin: 1%;
+        padding: 10px 20px;
+        background-color: #0056b3; /* IEEE Blue */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+        background-color: #004080; /* Darker Blue */
+    }
+
+    /* Responsive styles */
+    @media screen and (min-width: 600px) {
+        .container {
+            max-width: 200px;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        .container {
+            display: inline-block;
+            max-width: 400px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+
+
+    <div class="card"> <h1>IEEE Members Audit</h1>
+        <div class="select-form">
+           
+            <h2>Add Year</h2>
+            <form class="add-year-form form-group" method="post" action="/selectYear">
+                <select name="year" class="select-year" id="selectYear">
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <button type="submit" class="btn">Select Year</button>
+            </form>
+        </div>
+
+        <div class="select-form">
+            <h2>Create New Year</h2>
+            <form class="add-year-form form-group" method="post" action="/createYear">
+                <input type="number" class="select-year"  name="createdYear" id="createdYear" value="2026"> 
+                <button type="submit" class="btn">Create Year</button>
+            </form>
+        </div>
+    </div> </div>
+    <div class="container">
+    <div class="card">
+        <h1>IEEE events Audit </h1>
+        <div class="select-form">
+            <h2>Select Event</h2>
+            <form class="add-year-form form-group" method="post" action="/selectevent">
+                <select name="eventname" class="select-year">
+                    <option value="pokemonXhunter">2dfdff024</option>
+                    <option value="iellad">20fdfdf23</option>
+                    <option value="sdsfsfff">fff</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <button type="submit" class="btn">Select Event</button>
+            </form>
+        </div>
+
+        <div class="select-form">
+            <h2>Add Event</h2>
+            <form class="add-event-form form-group" method="post" action="/addEvent">
+                <input type="text" name="addEvent" placeholder="Event Name" class="select-event">
+                <button type="submit" class="btn">Add Event</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card">
+        <h1>Faculty and Miscellaneous</h1>
+        <div class="select-form">
+            <h2>Select Event</h2>
+            <form class="add-year-form form-group" method="post" action="/selectfm">
+                <select name="event name" class="select-year">
+                    <option value="miscellaneous">Miscellaneous</option>
+                    <option value="faculty">Faculty</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <button type="submit" class="btn">Select Event</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+  var now = new Date();
+  var select = document.getElementById("createdYear");
+
+  // Get the current year
+  var currentYear = new Date().getFullYear();
+  select.value = currentYear;
+</script>
+
+</body>
+</html>
